@@ -1,0 +1,339 @@
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: Product Sans;
+  src: url(Fonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+  font-family: Product Sans Bold;
+  src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+/*=============== BASE ===============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 1.8vw 1.5vw;
+  z-index: 99;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6vw;
+}
+
+.nav-logo {
+  font-size: 2.4vw;
+  font-family: Product Sans Bold;
+}
+
+.nav-items {
+  font-family: Product Sans;
+  display: flex;
+  font-size: 1.3vw;
+  gap: 4vw;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+ 
+/* Add shadow header */
+
+.shadow-header {
+    box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
+  }
+
+/*=============== Main ===============*/
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+}
+
+/*=============== Section1 ===============*/
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.section1-title {
+    position: absolute;
+    font-size: 20vw;
+    color: #fff;
+    font-family: Product Sans Bold;
+  }
+  
+  .section1-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vw;
+  }
+  #fanta-img {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+  }
+  
+#orange-img {
+    position: absolute;
+    width: 12vw;
+    bottom: -5%;
+    right: 27%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+  }
+  #halforange-img {
+    position: absolute;
+    width: 12vw;
+    top: -4%;
+    left: 30%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+  }
+  #leaf{
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 18%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#leaf2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#leaf3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+  /*=============== Section2 ===============*/
+  .section2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background:#4d231c;
+  }
+  
+  .left-container,
+  .right-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+  }
+  .left-container svg {
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+  }
+  .right-data h2 {
+    color: #fff;
+    font-size: 4vw;
+    margin-bottom: 3%;
+  }
+  .right-data p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+  }
+  
+  /*=============== Section3 ===============*/
+.section3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.card{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 25vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.card h3{
+  margin-top: 60vh;
+  font-size: 3vw;
+  z-index: 2;
+}
+.card button{
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: rgb(255, 149, 0);
+  padding: 1vw 2vw;
+}
+#cocacola{
+  top: -15%;
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#pepsi{
+  top: -20%;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.lemon{
+  top: -30%;
+  position: absolute;
+  left: 50%;
+  width: 25vw;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+@media screen and (max-width: 320px) {
+  #fanta-img {
+    width: 100%;
+  }
+    .navbar {
+        gap: 1vw;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .nav-logo {
+          font-size: 10vw;
+        }
+  .nav-items {
+      font-size: 5.5vw;
+      gap: 3vw;
+      flex-wrap: wrap;
+      justify-content:center;
+  }
+
+  .left-container svg {
+    margin-bottom: 40vh;
+  }
+
+  .card{
+    margin-bottom: 36vh;
+    width: 25vw;
+    height: 40vh;
+  }
+
+}
+@media (min-width: 321px) and (max-width: 576px){
+
+  #fanta-img {
+    width: 100%;
+  }
+
+    .navbar {
+        gap: 3vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .nav-logo {
+          font-size: 8vw;
+        }
+  .nav-items {
+      font-size: 3vw;
+      gap: 3vw;
+      flex-wrap: wrap;
+      justify-content:center;
+  }
+  .card{
+    margin-bottom: 36vh;
+    width: 25vw;
+    height: 40vh;
+  }
+
+  
+
+}
+@media (min-width: 577px) and (max-width: 768px){
+  .header {
+      padding: 3vw 1vw;
+    }
+    .navbar {
+        gap: 15vw;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .nav-logo {
+          font-size: 5vw;
+        }
+  .nav-items {
+      font-size: 3vw;
+      gap: 3vw;
+      flex-wrap: wrap;
+      justify-content:center;
+  }
+}  
+
